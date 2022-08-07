@@ -1,0 +1,34 @@
+I0612 15:46:46.594269 76307 gen_comm_id_helper.cc:205] Server listening on: 127.0.0.1:49655 successful.
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::imperative::NCCLParallelContext::Init()
+1   paddle::imperative::NCCLParallelContext::BcastNCCLId(std::vector<ncclUniqueId, std::allocator<ncclUniqueId> >&, int, int)
+2   void paddle::platform::RecvBroadCastCommID<ncclUniqueId>(int, std::string, std::vector<ncclUniqueId, std::allocator<ncclUniqueId> >*, int)
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1655020007 (unix time) try "date -d @1655020007" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x407000129c7) received by PID 76307 (TID 0x7f4c6c8dd240) from PID 76231 ***]
+
+I0617 16:45:17.813978 58658 gen_comm_id_helper.cc:205] Server listening on: 127.0.0.1:42289 successful.
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::imperative::NCCLParallelContext::Init()
+1   paddle::imperative::NCCLParallelContext::BcastNCCLId(std::vector<ncclUniqueId, std::allocator<ncclUniqueId> >&, int, int)
+2   void paddle::platform::RecvBroadCastCommID<ncclUniqueId>(int, std::string, std::vector<ncclUniqueId, std::allocator<ncclUniqueId> >*, int)
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1655455522 (unix time) try "date -d @1655455522" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x4070000e4f7) received by PID 58658 (TID 0x7f37d2dd3240) from PID 58615 ***]
+
